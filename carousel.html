@@ -1,0 +1,56 @@
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Owl-carousel Cards Slider</title>
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/OwlCarousel2/owl.theme.default.min.css">
+    <style>
+        @import url('./vendor/bootstrap/css/bootstrap.min.css');
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        html,body{
+            display: grid;
+            height: 100%;
+            place-items: center;
+            text-align: center;
+            background: #f2f2f2;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="owl-carousel owl-theme">
+    <div class="item"><h4>ITEM 1</h4></div>
+    <div class="item"><h4>ITEM 2</h4></div>
+    <div class="item"><h4>ITEM 3</h4></div>
+    <div class="item"><h4>ITEM 1</h4></div>
+    <div class="item"><h4>ITEM 2</h4></div>
+    <div class="item"><h4>ITEM 3</h4></div>
+    <div class="item"><h4>ITEM 1</h4></div>
+    <div class="item"><h4>ITEM 2</h4></div>
+    <div class="item"><h4>ITEM 3</h4></div>
+    <div class="item"><h4>ITEM 1</h4></div>
+    <div class="item"><h4>ITEM 2</h4></div>
+    <div class="item"><h4>ITEM 3</h4></div>
+
+</div>
+
+<script src="vendor/jquery.2.2.3.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="vendor/OwlCarousel2/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,473 @@
+/* Responsive CSS Document */
+
+/*
+    Created on   : 14/07/2024.
+    Last Update  : 14/07/2024.
+    Theme Name   : Shipeh - Landing Page.
+    Version      : 1.0.
+    Author       : Shipeh.
+    Developed by : IMAD GANNOUN
+    Designed by : Rabii
+*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 700px) {
+    /* start navbar css */
+    .hero-section .right .titles {
+        width: 66%;
+    }
+    .hero-section .right .titles h1.first {
+        height: 68px;
+        clip-path: polygon(0% 49.5%, 111.1% 10%, 110.1% 125.5%, 0% 100%);
+    }
+    .hero-section .right .titles .second {
+        height: 59px;
+    }
+    .hero-section .right .titles span, .hero-section .right .titles p {
+        font-size: 50px;
+    }
+    .left-mobile-mobile {
+        display: block;
+        width: 331px;
+        height: 41px;
+        background: #c21b31;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        line-height: 50%;
+        border-radius: 6px;
+        padding: 15px 0;
+    }
+    .footer .right-menu {
+        display: flex;
+        justify-content: center;
+    }
+    .hero-section .right .signInNow {
+        display: none;
+    }
+    .hero-section-background {
+        border-radius: 0% 0% 10% 31% / 26% 26% 39% 39%;
+    }
+    .hero-section .left {
+        text-align: left;
+        display: flex;
+        align-items: end;
+        padding-right: 1.5rem;
+        padding-bottom: 0.6rem;
+    }
+    .hero-section .left img {
+        width: 70%;
+    }
+    .hero-section .right {
+        margin-top: 1rem;
+    }
+    .navbar  {
+        direction: ltr !important;
+    }
+    .navbar-brand img {
+        width: 150px;
+        height: 59px;
+        display: block;
+    }
+    .start-header {
+        padding: 0;
+    }
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-link {
+        font-size: 20px;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+    .getStart {
+        width: 157px;
+        height: 41px;
+        background: #c21b31;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+        line-height: 20px;
+        border-radius: 10px;
+    }
+    .left-mobile-mobile {
+        font-size: 27px;
+        position: relative;
+        width: 39%;
+        top: -1px;
+        left: -6px;
+        right: 7px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+    .caracteres .row-carousel .card {
+        margin-top: 3rem !important;
+    }
+    .caracteres .card .logo2,
+    .caracteres .card .logo1,
+    .caracteres .card .logo3{
+        width: 67px !important;
+        height: 67px !important;
+        left: 31%;
+    }
+    .caracteres .card .logo2 img,
+    .caracteres .card .logo1 img,
+    .caracteres .card .logo3 img{
+        width: 80% !important;
+    }
+    /*.owl-carousel.owl-rtl .owl-item {*/
+    /*    width: 206px !important;*/
+    /*}*/
+    .caracteres .card p {
+        font-size: 13px !important;
+        line-height: 26px !important;
+        width: 99% !important;
+    }
+    .caracteres .card h4 {
+        font-size: 19px !important;
+        line-height: 24px !important;
+        margin: 7px 0 -11px 0;
+    }
+    .start_platforme .left img{
+        width: 100%;
+    }
+    .hero-section .left img {
+        width: 104%;
+        margin-bottom: -116px;
+        position: relative;
+        left: -11px;
+        top: -42px;
+    }
+    .hero-section .container-fluid{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .hero-section-background {
+        border-radius: 0% 0% 10% 31% / 26% 26% 0 13%;
+    }
+    .hero-section .right {
+        margin: 0 !important;
+    }
+    .hero-section .right .titles {
+        width: 74%;
+    }
+    .hero-section .right .titles span, .hero-section .right .titles p{
+        font-size: 29px;
+    }
+    .hero-section .right .titles h1.first {
+        height: 70px;
+        clip-path: polygon(0% 57.5%, 111.1% 42%, 110.1% 125.5%, 0% 100%);
+        padding-right: 0;
+    }
+    .hero-section .right .titles .second {
+        padding-right: 0;
+        height: 33px;
+    }
+    .hero-section .left {
+        padding-right: 0.5rem;
+    }
+    .left-mobile-mobile {
+        font-size: 23px;
+        position: relative;
+        width: 39%;
+        top: -3px;
+        left: -6px;
+        right: 3px;
+        line-height: 50%;
+        height: 50px;
+        font-weight: bold;
+    }
+    .footer .footer_middle_input  {
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .join_us .title {
+        margin-bottom: 1.5rem;
+    }
+    .join_us .right h2 {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 33px;
+        margin-bottom: 1rem;
+        text-align: justify;
+
+    }
+    .join_us .right p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 35px;
+        color: #5C5C5C;
+        text-align: center;
+    }
+    .join_us .left img {
+        width: 88%;
+    }
+    .start_platforme .left .pc_img {display: none !important;}
+        /*join_us*/
+
+    /*join_us*/
+    /*start_platforme*/
+    .start_platforme{
+        padding: 0.5rem;
+    }
+    .mobile_img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .start_platforme .right .title {
+        margin-bottom: 0.9rem;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 39px;
+        text-align: right;
+    }
+    .start_platforme .right p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 38px;
+    }
+    /*start_platforme*/
+    /*how_work*/
+    .how_work {
+        padding: 2rem 0;
+    }
+    .how_work .title p {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        margin-bottom: 0.9rem;
+        font-size: 17px;
+        line-height: 39px;
+        text-align: justify;
+    }
+    .how_work .left h2 {
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 36px;
+        margin-bottom: 1rem;
+    }
+    .how_work .left p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 34px;
+        text-align: justify;
+        color: #5C5C5C;
+    }
+
+    /*how_work*/
+    /*.select_products*/
+    .select_products .right h2 {
+        font-size: 26px;
+        margin-bottom: 1rem;
+    }
+    .select_products .right p {
+        font-size: 17px;
+        line-height: 36px;
+        text-align: justify;
+        color: #5C5C5C;
+    }
+    /*.select_products*/
+    /*Collect*/
+    .collect .left h2 {
+        margin-top: 1.3rem;
+        margin-bottom: 0.9rem;
+    }
+    .collect .left p {
+        font-size: 17px;
+        line-height: 36px;
+        text-align: justify;
+    }
+    /*Collect*/
+    /*caracteres*/
+    .caracteres .title {
+        font-size: 42px;
+        line-height: 43px;
+    }
+    .caracteres .description {
+        font-size: 17px;
+        line-height: 32px;
+    }
+    .caracteres .row-carousel .card {
+        width: 94%;
+        margin-bottom: 2rem;
+    }
+    .caracteres .card .logo2, .caracteres .card .logo1, .caracteres .card .logo3{
+        left: 40%;
+    }
+    /*caracteres*/
+
+    .ready_mobile_img {
+        display: block;
+    }
+    .ready_section .left h1 {
+        font-family: "Lalezar", system-ui;
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 37px;
+        text-align: center;
+        margin-bottom: 0.9rem;
+    }
+    .ready_section .left p {
+        font-size: 17px;
+        line-height: 35px;
+        text-align: justify;
+        color: #4F4F4F;
+    }
+    .ready_section .left .button {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .ready_section .left .button img {
+            WIDTH: 67%;
+            margin: 0;
+    }
+    .ready_section .left button {
+        height: 52px;
+        /* padding: 5px 20px 5px 20px; */
+        border-radius: 10px;
+        background: #C21B31;
+        font-size: 17px;
+        font-weight: 700;
+        /* line-height: 55px; */
+        text-align: center;
+        color: white;
+        margin: 0;
+        padding: 0 8px;
+    }
+    /*.owl-carousel.owl-rtl .owl-item {*/
+    /*    width: 290px !important;*/
+    /*}*/
+    /*.faqs_section */
+    .faqs_section {
+        padding: 0;
+        margin-top: 1.9rem;
+        margin-bottom: 1.5rem;
+    }
+    .faqs_section .left h3 {
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 35px;
+        text-align: right;
+    }
+    .faqs_section .left p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 31px;
+        text-align: justify;
+    }
+    .faqs-mobile {
+        padding: 0 6px;
+    }
+    .faqs_section .right .box {
+        margin: 0;
+        padding: 0;
+    }
+    .faqs_section .right .question {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 17px 0;
+        border-top: 1px solid #CCC;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 36px;
+        text-align: left;
+    }
+    .faqs_section .right .answer {
+        margin-top: 1rem;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 1rem;
+    }
+    /*.faqs_section */
+    /*.footer */
+    .footer {
+        padding: 1rem;
+    }
+    .footer .footer_top {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .footer .footer_top img {
+        width: 12%;
+    }
+    .footer .footer_top_text p {
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 12px;
+    }
+    .footer .footer_middle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer .footer_middle h3 {
+        font-size: 21px;
+        font-weight: 700;
+        /* line-height: 30px; */
+        text-align: center;
+    }
+    .footer .footer_middle_input {
+        padding: 0 10px;
+        border-radius: 68px;
+        width: 403px;
+        height: 51px;
+        border: 1px solid #83839A;
+        background: #000816;
+        direction: ltr;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px;
+        letter-spacing: 0.04em;
+        color: #83839A;
+        margin: 0 !important;
+    }
+    .footer .mobile-bottom {
+        margin-bottom:  0 !important;
+    }
+    .footer .footer_middle .footer_middle_button {
+        width: 161px;
+        height: 49px;
+        border-radius: 60px;
+        background: linear-gradient(105.5deg, #C21B31 19.57%, #AE0C21 78.85%);
+        color: white;
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 25px;
+        text-align: center;
+        margin-left: 0.5rem;
+    }
+    .footer .mobile-menu-right {
+        padding: 0;
+        margin: 0;
+    }
+    .footer .right-menu ul {
+        padding: 0;
+    }
+    .footer .right-menu ul li {
+        margin-left: 1rem;
+        border-left: 1px solid #CCC;
+        padding-left: 1rem;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        color: #B2B3CF;
+    }
+    .footer .left-menu {
+        display: flex;
+        justify-content: center;
+        /* width: 36px; */
+        margin: 0 auto;
+    }
+    .footer .left-menu div {
+        margin-left: 0;
+    }
+    /*.footer */
+}

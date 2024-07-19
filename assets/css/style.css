@@ -1,0 +1,782 @@
+/* CSS Document */
+
+/*
+    Created on   : 14/07/2024.
+    Last Update  : 14/07/2024.
+    Theme Name   : Shipeh - Landing Page.
+    Version      : 1.0.
+    Author       : Shipeh.
+    Developed by : IMAD GANNOUN
+    Designed by : Rabii
+*/
+/*----bootstrap css ----- */
+@import url('../../vendor/bootstrap/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('../../vendor/animate/animate.css');
+@font-face {
+    font-family: "Almarai";
+    src: url("../fonts/Almarai/Almarai-Bold.ttf"),
+         url("../fonts/Almarai/Almarai-Light.ttf");
+         url("../fonts/Almarai/Almarai-Regular.ttf");
+}
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+html {direction: rtl;}
+body {
+    font-family: "Almarai",sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+body::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+}
+
+button:hover {
+    color: white !important;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: #c21b31;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+header {
+    overflow: hidden;
+}
+/*start animation*/
+.animatable {
+    /* initially hide animatable objects */
+    visibility: hidden;
+
+    /* initially pause animatable objects their animations */
+    animation-play-state: paused;
+}
+/* show objects being animated */
+.animated {
+    visibility: visible;
+    animation-fill-mode: both;
+    animation-duration: 1s;
+    animation-play-state: running;
+}
+@keyframes bounceInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-2000px);
+    }
+    60% {
+        transform: translateX(20px);
+    }
+    80% {
+        transform: translateX(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes bounceInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(2000px);
+    }
+    60% {
+        transform: translateX(-20px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.animated.bounceInRight {
+    animation-name: bounceInRight;
+}
+.animated.bounceInLeft {
+    animation-name: bounceInLeft;
+}
+.animated.fadeInUp {
+    animation-name: fadeInUp;
+}
+/*end animation*/
+/* start navbar css */
+
+.navbar{
+    padding: 0;
+}
+.navbar-brand img{
+    width: 212px;
+    height: 61px;
+    display: block;
+}
+.navbar-toggler {
+    float: right;
+    border: none;
+    padding-right: 0;
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus {
+    outline: none;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+.navbar-light .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 1px solid #000;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after,
+.navbar-light .navbar-toggler-icon:before{
+    width: 24px;
+    position: absolute;
+    height: 1px;
+    background-color: #000;
+    top: 0;
+    left: 0;
+    content: '';
+    z-index: 2;
+    transition: all 300ms linear;
+}
+.navbar-light .navbar-toggler-icon:after{
+    top: 8px;
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+    transform: rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+    transform: translateY(8px) rotate(-45deg);
+}
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    border-color: transparent;
+}
+.nav-link{
+    color: #212121 !important;
+    font-weight: 500;
+    transition: all 200ms linear;
+
+}
+
+.nav-item.active .nav-link{
+    color: #777 !important;
+}
+.nav-link {
+    position: relative;
+    padding: 5px 0 !important;
+    display: inline-block;
+    font-size: 25px;
+}
+
+
+.nav-item{
+    position: relative;
+    transition: all 200ms linear;
+    padding-left: 1.5rem!important;
+}
+.start-header {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 20px 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    background: #ffeeee;
+
+}
+.navbar-nav {
+    margin-left: auto;
+}
+/* end navbar css */
+/*Start Hero Section*/
+.hero-section{
+    position: relative;
+}
+.hero-section .container,.hero-section .row {
+    height: 100%;
+}
+.hero-section .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 2rem;
+    margin-top: 4rem;
+}
+.getStart {
+    width: 170px;
+    height: 50px;
+    background: #c21b31;
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+    line-height: 31px;
+    border-radius: 10px;
+    padding: 10px 30px 10px 30px;
+}
+.hero-section .right .signInNow{
+    width: 316px;
+    height: 75px;
+    background: #c21b31;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    line-height: 45px;
+    border-radius: 17px;
+    padding: 15px 40px 15px 40px;
+}
+.left-mobile-mobile {
+    display: none;
+}
+.select_products .right img {
+    width: 90%;
+}
+.hero-section .right .titles  h1{
+    font-size: 75px;
+    font-weight: 400;
+    background: white;
+    font-family: "Lalezar", system-ui;
+    text-align: center;
+}
+.hero-section .right .titles .second {
+    z-index: -999999;
+    height: 74px;
+    padding-right: 20px;
+    clip-path: polygon(0% -11.5%, 100% 12%, 100.1% 78.5%, 0% 100%);
+}
+.hero-section .right .titles h1.first {
+    z-index: -999999;
+    height: 74px;
+    padding-right: 20px;
+    clip-path: polygon(0% 44.5%, 100.1% 0, 100.1% 111.5%, 0% 100%);
+}
+.hero-section .right .titles h1.first .title-sp {
+    color: #c21b31;
+}
+.hero-section .right .titles span,
+.hero-section .right .titles p {
+    font-size: 60px;
+}
+.hero-section .left img {
+    width: 90%;
+    margin-bottom: -35px;
+}
+.hero-section-background {
+    background: #ffeeee;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 0% 0% 38% 38% / 26% 26% 39% 39%;
+    z-index: -1;
+    top: 0;
+    background-image: url(../vectors/background_hero_section.svg);
+    /* overflow: hidden; */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*End Hero Section*/
+/*Start join Us*/
+.join_us {
+    margin-top: 2rem;
+}
+.join_us .title {
+    text-align:center;
+    font-family: "Lalezar", system-ui;
+}
+.join_us .title span {
+    color: #c21b31;
+}
+.join_us .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.join_us .right h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 53px;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+.join_us .right p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: right;
+    color: #5C5C5C;
+}
+.join_us .left img {
+    width: 100%;
+}
+/*End join Us*/
+/*Start Platforme*/
+.start_platforme {
+    margin-top: 3rem;
+    background: #F5F5F5;
+    padding: 30px;
+    /*height: 80vh;*/
+}
+.start_platforme .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.start_platforme .right .title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 63px;
+    text-align: right;
+
+}
+.start_platforme .right .title span {
+    color: #c21b31;
+}
+.start_platforme .right p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: right;
+    color: #5C5C5C;
+}
+.start_platforme .left {
+    height: 100%;
+    background-image: url("../vectors/background_hero_section.svg");
+    background-size: cover;
+    text-align: left;
+}
+/*.start_platforme .left img {*/
+/*    width: 100%;*/
+/*}*/
+/*End Platforme*/
+/*start how work*/
+.how_work {
+    padding: 2rem 0;
+}
+.how_work .title {
+    text-align: center;
+}
+.how_work .title h1 {
+    font-family: "Lalezar", system-ui;
+}
+.how_work .title h1 span {
+    color: #c21b31;
+}
+.how_work .right img {
+    width: 90%;
+}
+.how_work .title p {
+    font-size:20px;
+    line-height:45px;
+    text-align: center;
+    color: #5C5C5C;
+    width: 50%;
+    margin: 0 auto 1rem;
+}
+.how_work .left h2 {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-bottom: 2rem;
+}
+.how_work .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.how_work .left p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 41px;
+    text-align: justify;
+    color: #5C5C5C;
+}
+/*end how work*/
+/*Start Select Products */
+.select_products .right {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.select_products .right h2 {
+    margin-bottom: 2rem;
+}
+.select_products .right p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: right;
+    color: #5C5C5C;
+}
+.select_products .left img {
+    width: 90%;
+}
+/*End Select Products */
+/*Start Collect*/
+.collect .right img {
+    width: 90%;
+}
+.collect .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.collect .left p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: right;
+    color: #5C5C5C;
+}
+.collect .left h2 {
+    margin-bottom: 2rem;
+}
+/*End Collect*/
+/*Start Characters */
+.caracteres {
+    direction: ltr !important;
+    padding-bottom: 2rem;
+}
+.caracteres .title {
+    font-family: "Lalezar", system-ui;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 78px;
+    text-align: center;
+}
+.caracteres .title span {
+    color: #c21b31;
+}
+.caracteres .description {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+    color: #5C5C5C;
+}
+.owl-carousel.off {
+    display: block;
+}
+.caracteres .row-carousel  {
+    display: flex;
+    justify-content: space-around;
+}
+.caracteres .row-carousel .card {
+    background: white;
+    height: 374.13px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    box-shadow: 0 10px 60px 0 #262D7614;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+}
+.caracteres .card h4 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 27px;
+    text-align: center;
+    color: #12151F;
+    margin: 0 0 -30px 0;
+}
+.caracteres .card p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+    color: #555555;
+    width: 81%;
+    margin: 0 auto;
+
+}
+.caracteres .card .logo1{
+    background: #29B9E7;
+    text-align: center;
+    width: 81px;
+    height: 81px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0 10px 40px 0 #363D880F;
+    position: absolute;
+    top: -46px;
+    left: 40%;
+}
+.caracteres .card .logo2{
+    background: #C21B31;
+    text-align: center;
+    width: 81px;
+    height: 81px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0 10px 40px 0 #363D880F;
+    position: absolute;
+    top: -46px;
+    left: 40%;
+}
+.caracteres .card .logo3{
+    background: #29B9E7;
+    text-align: center;
+    width: 81px;
+    height: 81px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
+    box-shadow: 0 10px 40px 0 #363D880F;
+    position: absolute;
+    top: -46px;
+    left: 40%;
+}
+.caracteres .card .logo1 img,
+.caracteres .card .logo2 img,
+.caracteres .card .logo3 img{
+    width: 84%;
+    margin: auto;
+}
+/*End Characters */
+/*Start Ready Section*/
+.ready_section .right img {
+    width: 90%;
+}
+.ready_section .left h1{
+    font-family: "Lalezar", system-ui;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 45px;
+    text-align: center;
+    margin-bottom: 1.9rem;
+}
+.ready_section .left {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.ready_section .left h1 span {
+    color: #C21B31;
+}
+.ready_section .left p {
+    font-size: 26px;
+    line-height: 46px;
+    text-align: center;
+    color: #4F4F4F;
+}
+.ready_section .left button {
+    padding: 5px 20px 5px 20px;
+    border-radius: 15px;
+    background: #C21B31;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+    color: white;
+}
+.ready_section .left .button{
+    text-align: end;
+}
+.ready_section .left .button img {
+    margin-right: 0.5rem;
+}
+/*End Ready Section*/
+/*Start Faqs Section*/
+.faqs_section {
+    padding: 5rem;
+}
+.faqs_section .right .question {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+    border-top: 1px solid #CCC;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+
+}
+.faqs_section .right .question:last-of-type {
+    border-bottom: 1px solid #CCC;
+}
+.faqs_section .right .box {
+    margin: 0;
+}
+.faqs_section .right .answer {
+    margin-top: 1rem;
+    width: 90%;
+    margin-bottom: 1rem;
+    line-height: 30px;
+}
+.faqs_section .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.faqs_section .left h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: right;
+}
+.faqs_section .left p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: right;
+
+}
+/*End Faqs Section*/
+/*start footer*/
+.footer {
+    text-align: center;
+    background: #000816;
+    padding: 2rem;
+    color: white;
+}
+
+.footer .footer_top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.footer .footer_top_text {
+    margin-right: 1rem;
+    border-right: 1px solid #626381;
+    padding-right: 1rem;
+}
+.footer .footer_top_text p {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.footer .footer_middle h3 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+
+}
+.footer .footer_middle_input {
+    padding: 0 10px;
+    border-radius: 68px;
+    width: 403px;
+    height: 57px;
+    border: 1px solid #83839A;
+    background: #000816;
+    direction: ltr;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #83839A;
+    font-family: "Poppins", sans-serif;
+}
+.footer .footer_middle .footer_middle_button {
+    width: 179px;
+    height: 60px;
+    border-radius: 60px;
+    background: linear-gradient(105.5deg, #C21B31 19.57%, #AE0C21 78.85%);
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    margin-left: 1rem;
+}
+.footer .right-menu ul {
+    list-style: none;
+    display: flex;
+}
+.footer .right-menu ul li {
+    margin-left: 1rem;
+    border-left: 1px solid #CCC;
+    padding-left: 1rem;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #B2B3CF;
+}
+.footer .right-menu ul li a {
+    color: #B2B3CF;
+    text-decoration: none;
+}
+.footer .right-menu ul li:last-of-type{
+    border-left: none;
+    padding-left: 0;
+}
+.footer .left-menu {
+    display: flex;
+    justify-content: end;
+}
+.footer .left-menu div {
+    margin-left: 0.9rem;
+}
+.footer .left-menu div:last-of-type{
+    margin-left: 0;
+}
+.footer .footer_copyright {
+    font-family: Poppins, serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    text-align: center;
+    direction: ltr;
+    color: #B2B3CF;
+
+}
+.ready_mobile_img {display: none}
+
+.navbar-light .navbar-toggler-icon {
+    width: 24px;
+    height: 17px;
+    background-image: none;
+    position: relative;
+    border-bottom: 2px solid #000;
+    transition: all 300ms linear;
+}
+.go-top {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(194 27 49);
+    padding: 1em;
+    display: none;
+    width: 63px;
+    border-radius: 50%;
+}
+
+.go-top:hover {
+    background-color: rgb(111 10 23);
+}
+/*end footer*/
